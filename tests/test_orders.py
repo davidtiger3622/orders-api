@@ -1,8 +1,9 @@
-from fastapi.testclient import TestClient
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
+from fastapi.testclient import TestClient
+
+from app.db import get_db
 from app.main import app
-from app.db import get_db, SessionLocal
 
 client = TestClient(app)
 

@@ -1,6 +1,6 @@
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
-from app.cache import acquire_lock, release_lock, check_lock
+from app.cache import acquire_lock, check_lock, release_lock
 
 
 @patch("app.cache.redis_client")
